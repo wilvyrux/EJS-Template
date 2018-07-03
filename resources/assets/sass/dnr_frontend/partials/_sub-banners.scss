@@ -1,0 +1,40 @@
+.subpage-banner {
+    /*overides the swiper slider height*/
+    height: 265px!important;
+    position: relative;
+    background-size:cover;
+    background-position: center;
+
+    // >img {
+    //     object-fit: cover;
+    //     height: 100%;
+    // }
+    .container {
+        height: inherit;
+        padding: 0;
+
+        >h1 {
+            bottom: 35px;
+            position: absolute;
+        }
+    }
+
+    @media only screen and (max-width:480px) {
+        height: 200px !important;
+    }
+
+    @media only screen and (max-width:800px) {
+        &:before {
+            @include t-black(.7);
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+
+}
+
+

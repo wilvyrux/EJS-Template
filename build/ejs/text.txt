@@ -1,0 +1,7 @@
+<% include ./inc/layout/header %>
+  <main class="rpg-page-content">
+
+    <% include ./inc/components/banner %>
+
+  </main>
+<% include ./inc/layout/footer %>

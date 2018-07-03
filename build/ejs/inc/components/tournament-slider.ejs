@@ -1,0 +1,41 @@
+<div class="mg-t-90">
+    <div class="rpg-content-custom">
+        <div class="rpg-title-hero text-left mg-b-20">
+            <b class="rpg-title-hero__sup-text text-uppercase text-bold color-red">Become A Legend</b>
+            <h1 class="mg-t-0">
+                Upcoming Tournaments
+
+                <!-- Nested element in heading tag -->
+                <div class="rpg-tournament-slider__button pull-right">
+                    <label for="" class="text-center">3/10</label>
+                    <button class="rpg-tournament-slider__button--prev"><img src="img/icon/slick-nav-prev.png" alt="PREV" srcset=""></button>
+                    <button class="rpg-tournament-slider__button--next"><img src="img/icon/slick-nav-next.png" alt="NEXT" srcset=""></button>
+                </div>
+            </h1>
+            <span class="rpg-title-hero__divider"></span>
+
+        </div>
+    </div>
+
+    <div class="rpg-tournament-slider">
+        <% for(var i = 0; i < 6; i++) { %>
+        <div>
+            <div class="rpg-event-card text-left">
+                <a class="rpg-btn rpg-btn-skew rpg-btn-skew-solid rpg-btn-skew-solid--white color-red fontface-opensans" href="event_details.html">View Details</a>
+
+                <img src="img/generic-common/slider-tourn-1.jpg" alt="" srcset="">
+                <h3 class="rpg-event-card__date text-bold text-uppercase"><i class="fas fa-angle-double-right"></i> January 7, 2018</h3>
+                <h2 class="rpg-event-card__location text-center text-uppercase">San Diego, CA</h2>
+            </div>
+        </div>
+        <% } %>
+    </div>
+
+    <div class="rpg-content-custom mg-b-60">
+        <button class="rpg-btn  rpg-btn-cut-tr rpg-btn-cut-red">
+            View All Tournaments <span class="arrow color-white">&rarr;</spa>
+        </button>
+    </div>
+
+
+</div>

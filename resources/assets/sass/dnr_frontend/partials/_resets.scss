@@ -1,0 +1,188 @@
+
+body {
+    // font-family: $font-primary;
+    font-family: $font-primary;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+div,
+ul li,
+a {
+//    font-family: $font-secondary;
+    letter-spacing: inherit !important;
+}
+
+
+// h1.vc_custom_heading,
+// h2.vc_custom_heading,
+// h3.vc_custom_heading,
+// h4.vc_custom_heading,
+// h5.vc_custom_heading
+// {
+//     font-family: $font-primary;
+
+// }
+
+// p {
+//     font-size: .9em;
+//     line-height: 24px;
+// }
+
+.rounded {
+    @include border-radius(7px);
+}
+
+* {
+    @include transition(.3s);
+}
+
+.padding-reset {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.padding-left-reset {
+    padding-left: 0 !important;
+}
+
+.padding-right-reset {
+    padding-right: 0 !important;
+}
+
+
+.clear-padding {
+    padding-left:0;
+    padding-right: 0;
+
+    @media only screen and (max-width:765px) {
+        padding: 0 10px;
+    }
+
+}
+
+
+
+.font-italic {
+    font-style: italic;
+}
+.font-bold {
+    font-weight: bold;
+}
+
+.padding-upside-40 {
+    padding: 40px 0;
+
+    @media only screen and (max-width:765px) {
+        padding: 0 10px;
+    }
+
+}
+
+.input-group-btn-custom-filter {
+    overflow: inherit !important;
+}
+
+
+
+
+
+
+.block-quote {
+    padding:35px 60px;
+
+    text-align: center;
+    position: relative;
+
+    p {
+        line-height: 30px;
+        position: relative;
+        z-index: 1;
+        font-size: 1.8em;
+
+        @media only screen and (max-width:600px) {
+            font-size: 1em;
+            line-height: 24px;
+        }
+    }
+
+    &:before,
+    &:after {
+        width: 87px;
+        height: 64px;
+        display: block;
+        position: absolute;
+        content: '';
+        z-index: 1;
+    }
+
+    &::before {
+        left: 18px;
+        top: 2px;
+        background-image: url(../img/newsprite-all.png);
+        background-image:0 0;
+    }
+
+    &::after {
+        right: 25px;
+        bottom: 34px;
+        background-image: url(../img/newsprite-all.png);
+        background-position:-90px 0;
+    }
+}
+
+
+
+
+.heading-image {
+    border-top: 3px solid $color_primary;
+    padding-top: 10px;
+    margin-bottom: 30px;
+
+    h4 {
+        float: left;
+        padding: 15px 0;
+    }
+
+    img {
+        float: right;
+    }
+
+    &::after {
+        display:block;
+        clear: both;
+        content: '';
+    }
+}
+
+
+
+.hightlights {
+    padding: 10px 140px;
+    text-align: center;
+
+    @media only screen and (max-width:769px) {
+        padding: 20px;
+    }
+
+    p {
+        line-height: 30px;
+        font-size: 1.8em;
+    }
+}
+
+.padding-both-40 {
+    padding-left: 70px !important;
+    padding-right: 70px !important;
+}
+

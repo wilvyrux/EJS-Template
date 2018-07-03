@@ -1,0 +1,125 @@
+<div class="rpg-forum__post rpg-forum__post--tab bg-white col-md-12 pd-t-20 pd-h-0 pd-b-0">
+  <div class="rpg-forum__post-header mg-b-30 pd-h-0">
+    <div class="rpg-forum__post--tab-button col-md-4 pd-t-20 pd-b-20 rpg-tab-item active" data-tab-item="1">
+      <h2 class="fontface-oswald text-uppercase text-bold mg-b-0 mg-t-0">Synopsis</h2>
+    </div>
+    <div class="rpg-forum__post--tab-button col-md-4 pd-t-20 pd-b-20 rpg-tab-item" data-tab-item="2">
+      <h2 class="fontface-oswald text-uppercase text-bold mg-b-0 mg-t-0">Characters</h2>
+    </div>
+    <div class="rpg-forum__post--tab-button col-md-4 pd-t-20 pd-b-20 rpg-tab-item" data-tab-item="3">
+      <h2 class="fontface-oswald text-uppercase text-bold mg-b-0 mg-t-0">Chat Room</h2>
+    </div>
+  </div>
+
+  <div class="rpg-forum__post-body">
+
+    <!-- TAB ONE -->
+    <div class="rpg-forum__post--tab-content rpg-tab-content" id="tab-content-1">
+
+      <!-- DESCRIPTION -->
+      <div class="mg-t-40  mg-b-20  inline-block text-left">
+        <p class="fontface-opensans text-semi-bold">
+          Lorem ipsum dolor sit amet, dapibus velit sociis urna pellentesque laoreet, ut justo magna. Mauris velit, nec dictum, lacinia
+          arcu libero leo turpis libero nec. Lorem massa. Et dui:
+          <span class="color-red">http://www.websitelink.com/12odfaldiuv/1298fdasdh</span>, dolor iaculis fringilla vestibulum volutpat, mi adipiscing
+          proin nulla ullamcorper. Donec elit donec urna id mauris, lectus sed, etiam etiam, velit fusce mauris non nascetur
+          pharetra in, nonummy urna at vestibulum. Lorem ipsum dolor sit amet, pede cubilia ut quis impedit aenean eu. Scelerisque
+          dui in eu, nonummy orci. Condimentum vel quia nunc, duis in, eu vulputate sem.
+        </p>
+        <p class="fontface-opensans text-semi-bold">
+          Fusce id, fermentum eu semper, wisi sed libero placerat sit. Sit donec integer, amet dignissim quisque at. Tincidunt donec
+          suspendisse, ligula fames id, elit in nulla, pharetra quam. Diam feugiat, lacinia dapibus lorem arcu ligula purus,
+          nec at, dolor quam duis etiam, ac phasellus dictum sed lobortis erat. Vitae fringilla pulvinar justo massa suscipit
+          adipiscing, quis orci sed neque est et, accumsan vel consectetuer mi vel libero, ullamcorper et nulla risus luctus,
+          dignissim magna sagittis a. Et ultrices quisque non quam nec ipsum.
+        </p>
+      </div>
+    </div>
+
+
+
+
+    <!-- TAB THREE -->
+    <div class="rpg-forum__post--tab-content rpg-tab-content hide" id="tab-content-3">
+      <div class="rpg-event-detail__comment text-left ">
+        <div class="rpg-title-hero--sm">
+          <h2 class="text-uppercase fontface-oswald text-bold text-left">
+            <img src="img/icon/icon-kopie.png" alt=""> Comments
+          </h2>
+        </div>
+        <hr />
+        <p class="color-grey">Leave a comment lorem ipsum elite dolor et sup melis dolor!</p>
+
+        <!-- COMMENT FORM -->
+        <div class="mg-t-40">
+          <form>
+            <div class="form-group">
+              <textarea class="form-control" rows="7" placeholder="Enter your message here...."></textarea>
+            </div>
+
+            <button href="gamer_locations.html" class="rpg-btn-cut-tr rpg-btn-cut-tr--sm rpg-btn-cut-black pull-right mg-b-10 no-decoration">
+              Submit Comment
+            </button>
+          </form>
+        </div>
+
+        <!-- COMMENT LIST -->
+        <div class="mg-t-25">
+          <ul class="rpg-event-detail__list">
+            <%
+                            var i;
+
+                            for(i = 0; i < 2; i++){
+                        %>
+              <li class="mg-b-40">
+                <div class="media">
+                  <a class="pull-left" href="#">
+                    <img class="media-object" src="img/leaders-avatar/04.png" alt="Image">
+                  </a>
+                  <div class="media-body pd-l-40">
+                    <h4 class="media-heading">
+                      <span class="rpg-event-detail__list-name text-bold ">
+                        <a href="" class="no-decoration color-red">Mark</a>
+                      </span>
+                      <span class="rpg-event-detail__list-divider">•</span>
+                      <span class="rpg-event-detail__list-datetime color-grey">Sept 1, 2016 @ 07:34 Am</span>
+                    </h4>
+                    <p class="fontface-opensans">Is close reading really the goal? Or is "deeply understanding the author's written message" the goal?</p>
+                  </div>
+                </div>
+
+              </li>
+              <li class="mg-b-40">
+                <div class="media">
+                  <a class="pull-left" href="#">
+                    <img class="media-object" src="img/leaders-avatar/02.png" alt="Image">
+                  </a>
+                  <div class="media-body pd-l-40">
+                    <h4 class="media-heading">
+                      <span class="rpg-event-detail__list-name text-bold ">
+                        <a href="" class="no-decoration color-red">Bill</a>
+                      </span>
+
+                      <span class="rpg-event-detail__list-divider">•</span>
+                      <span class="rpg-event-detail__list-datetime color-grey">Sept 1, 2016 @ 07:34 Am</span>
+                    </h4>
+                    <p class="fontface-opensans">That is the point of close reading. That is why it is the goal. You want students to be able to deeply
+                      understand the author's message--in other words, you need to read closely, analytically, deeply, critically,
+                      reflectively.
+                    </p>
+                  </div>
+                </div>
+
+              </li>
+              <%}%>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+</div>

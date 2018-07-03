@@ -1,0 +1,88 @@
+<div class="depth-shadow bg-white col-md-12 pd-0 pd-b-0">
+    <div class="mg-b-20 pd-b-20 mg-b-20 pd-h-40 bg-white inline-block w-full">
+        <div class="col-md-3 no-padding">
+            <div class="rpg-title-hero text-left">
+                <h3 class="color-black fontface-oswald text-bold">Search For A Player
+                </h3>
+                <span class="rpg-title-hero__divider"></span>
+            </div>
+        </div>
+        <div class="col-md-9 mg-t-60 no-padding">
+            <div class="rpg-searchtool rpg-searchtool--leaderboad">
+                <input type="text" placeholder="Search by name or location">
+                <button class="rpg-btn-cut-tr rpg-btn-cut-red"><i class="far fa-arrow-alt-circle-right"></i>Search</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="rgp-leaderboad-table">
+
+        <div class="rgp-leaderboad-table__row--header">
+            <div class="rgp-leaderboad-table__cell rgp-leaderboad-table__cell--rank fontface-oswald text-left color-grey">
+                Rank
+            </div>
+            <div class="rgp-leaderboad-table__cell rgp-leaderboad-table__cell--player fontface-oswald text-left color-grey">
+                Player
+            </div>
+            <div class="rgp-leaderboad-table__cell rgp-leaderboad-table__cell--gm-level fontface-oswald text-left color-grey">
+                Gm level
+            </div>
+            <div class="rgp-leaderboad-table__cell rgp-leaderboad-table__cell--mp-level fontface-oswald text-left color-grey">
+                Mp level
+            </div>
+            <div class="rgp-leaderboad-table__cell rgp-leaderboad-table__cell--game-total fontface-oswald text-left color-grey">
+                Games total
+            </div>
+            <div class="rgp-leaderboad-table__cell rgp-leaderboad-table__cell--total-points fontface-oswald text-left color-grey">
+                Total points
+            </div>
+        </div>
+        <%
+          var i;
+
+          for(i = 0; i < 10; i++) {
+        %>
+            <div class="rgp-leaderboad-table__row">
+                <div class="rgp-leaderboad-table__cell text-center fontface-oswald" data-title="Rank">
+                    <%=i+1%>
+                </div>
+                <div class="rgp-leaderboad-table__cell text-left" data-title="Player">
+                    <img src="img/leaders-avatar/01.png" class="media-object inline-block mg-r-20">
+                    <a href="leaderboards_details.html" class="no-decoration inline-block disp-table-cell-middle">
+                        <h1 class="no-decoration text-uppercase fontface-oswald color-black inline-block mg-0">TONYDIZZLE</h1>
+                    </a>
+                </div>
+                <div class="rgp-leaderboad-table__cell text-left" data-title="Gm level">
+                    <h1 class="text-uppercase fontface-oswald color-black mg-0">25,834</h1>
+                </div>
+                <div class="rgp-leaderboad-table__cell text-left" data-title="Mp level">
+                    <h1 class="text-uppercase fontface-oswald color-black mg-0">3,745</h1>
+                </div>
+                <div class="rgp-leaderboad-table__cell text-left" data-title="Games total">
+                    <h1 class="text-uppercase fontface-oswald color-black mg-0">53</h1>
+                </div>
+                <div class="rgp-leaderboad-table__cell text-left" data-title="Total points">
+                    <h1 class="no-decoration text-uppercase fontface-oswald color-red">32,194</h1>
+                </div>
+            </div>
+            <%}%>
+
+
+    </div>
+
+    <ul class="rpg-pagination pagination">
+        <li class="active"><a href="#" class="text-bold ">1</a></li>
+        <li><a href="#" class="text-bold">2</a></li>
+        <li><a href="#" class="text-bold color-black">...</a></li>
+        <li>
+            <a href="#" class="rpg-btn-cut-tr rpg-btn-cut-red text-bold ">
+                <i class="fa fa-angle-double-right"></i>
+            </a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,124 @@
+
+@mixin border-radius($value:5px) {
+    -webkit-border-radius: $value;
+    border-radius: $value;
+    -moz-border-radius: $value;
+}
+
+@mixin nobackground {
+    background: transparent !important;
+    background-color:transparent !important;
+}
+
+
+
+
+//BACKGROUND RGBA COLORS
+@mixin t-black($opacity:.6) {
+    background: rgba(0,0,0,$opacity);
+}
+
+@mixin t-white($opacity:.9) {
+    background: rgba(256,256,256,$opacity) !important;
+}
+
+@mixin t-color($value1:0,$value2:0,$value3:0,$opacity:.8) {
+    background: rgba($value1,$value2,$value3,$opacity);
+}
+
+
+@mixin noshadow {
+    -webkit-box-shadow: none !important;
+    box-shadow:none !important;
+}
+
+@mixin shadows {
+    -webkit-box-shadow: 1px 0 10px 1px rgba(0,0,0,.1);
+    box-shadow: 1px 0 10px 1px rgba(0,0,0,.1);
+}
+
+
+
+@mixin transition($time) {
+    -webkit-transition: all $time ease;
+    -moz-transition: all $time ease;
+    -ms-transition: all $time ease;
+    -o-transition: all $time ease;
+    transition: all $time ease;
+}
+
+
+@mixin floating($position:absolute,$top:0,$left:0,$right:0,$bottom:0) {
+    position: $position !important;
+    top:$top !important;
+    left:$left !important;
+    right: $right !important;
+    bottom: $bottom !important;
+}
+
+
+@mixin transform_translate($x,$y) {
+     transform: translate($x,$y);
+     -moz-transform: translate($x,$y);
+     -webkit-transform: translate($x,$y);
+     -o-transform: translate($x,$y);
+}
+
+@mixin transform_scale($x,$y) {
+     transform: scale($x,$y);
+     -moz-transform: scale($x,$y);
+     -webkit-transform: scale($x,$y);
+     -o-transform: scale($x,$y);
+}
+
+
+@mixin border($value:1px,$style:solid,$color:$color-black) {
+    border:$value $style $color;
+}
+
+
+@mixin r-margin  {
+    margin: 0;
+    padding: 0;
+}
+
+
+@mixin absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+@mixin fontawesome {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin clearfix {
+    clear: both;
+    display: block;
+    content: '';
+}
+
+
+$base__font-size :16px;
+
+// px to em convert
+@function em($px, $base: $base__font-size){
+    @return ($px / $base) * 1em;
+}
