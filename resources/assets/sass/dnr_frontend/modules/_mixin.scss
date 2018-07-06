@@ -37,8 +37,6 @@
     box-shadow: 1px 0 10px 1px rgba(0,0,0,.1);
 }
 
-
-
 @mixin transition($time) {
     -webkit-transition: all $time ease;
     -moz-transition: all $time ease;
@@ -117,8 +115,35 @@
 
 
 $base__font-size :16px;
-
 // px to em convert
 @function em($px, $base: $base__font-size){
     @return ($px / $base) * 1em;
 }
+
+
+
+// responsive
+@mixin respond($breakpoint) {
+
+    @if $breakpoint == phone {
+        @media (max-width:600px) { @content };
+    }
+
+    @if $breakpoint == tab-table {
+        @media (max-width:1000px) { @content };
+    }
+
+    @if $breakpoint == tablet {
+        @media (max-width:1024px) { @content };
+    }
+
+    @if $breakpoint == desktop {
+        @media (max-width:1920px) { @content };
+    }
+}
+
+
+// @include respond(phone) {
+//     font-size:1em;
+// }
+
